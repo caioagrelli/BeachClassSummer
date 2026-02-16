@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beach Class 312F</title>
+
+  <!-- Tailwind via CDN (rápido pra começar) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte opcional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-sky-50 text-slate-800">
+
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-2 font-bold">
+        <span class="text-xl">🏖️</span>
+        <span>Beach Class <span class="text-sky-600">312F</span></span>
+      </a>
+
+      <nav class="hidden gap-6 text-sm font-semibold md:flex">
+        <a class="hover:text-sky-700" href="#fotos">Fotos</a>
+        <a class="hover:text-sky-700" href="#localizacao">Localização</a>
+        <a class="hover:text-sky-700" href="#comodidades">Comodidades</a>
+        <a class="hover:text-sky-700" href="#contato">Contato</a>
+      </nav>
+
+      <a id="cta-top" href="#contato"
+        class="rounded-full bg-sky-600 px-4 py-2 text-sm font-bold text-white hover:bg-sky-700">
+        Reservar
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="mx-auto max-w-5xl px-4 pb-10 pt-8">
+    <div class="grid gap-8 md:grid-cols-2 md:items-center">
+
+      <div class="space-y-5">
+        <div class="inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900">
+          <span>⭐</span> <span>Resort • Piscina • Conforto</span>
+        </div>
+
+        <h1 class="text-3xl font-extrabold leading-tight md:text-5xl">
+          Seu refúgio no <span class="text-sky-700">Beach Class</span>
+        </h1>
+
+        <p class="text-base leading-relaxed text-slate-600 md:text-lg">
+          Apartamento <b>312F</b> com vibe de resort. Ideal pra descanso, casal, família e fim de semana.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <!-- Troque os links abaixo -->
+          <a id="btn-airbnb" target="_blank" rel="noopener"
+            href="https://airbnb.com"
+            class="rounded-xl bg-rose-600 px-5 py-3 text-sm font-bold text-white hover:bg-rose-700">
+            Airbnb
+          </a>
+
+          <a id="btn-whatsapp" target="_blank" rel="noopener"
+            href="https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20Beach%20Class%20312F."
+            class="rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-700">
+            WhatsApp
+          </a>
+
+          <a href="#fotos"
+            class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 hover:bg-slate-50">
+            Ver fotos
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-4 text-sm text-slate-600">
+          <span>📍 Porto de Galinhas (exemplo)</span>
+          <span>🛏️ 4 hóspedes (exemplo)</span>
+          <span>📶 Wi-Fi</span>
+        </div>
+      </div>
+
+      <!-- Imagem destaque -->
+      <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+        <!-- Troque por sua imagem: assets/hero.jpg -->
+        <div class="aspect-[4/3] w-full bg-gradient-to-br from-sky-300 via-sky-500 to-sky-800"></div>
+        <div class="p-4">
+          <p class="font-bold">Beach Class 312F</p>
+          <p class="text-sm text-slate-600">Piscina + clima de resort</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fotos -->
+  <section id="fotos" class="bg-white">
+    <div class="mx-auto max-w-5xl px-4 py-12">
+      <div class="mb-6">
+        <h2 class="text-2xl font-extrabold md:text-3xl">Fotos</h2>
+        <p class="text-slate-600">Clique para abrir (troque pelas suas imagens depois).</p>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section id="localizacao" class="bg-sky-50">
+    <div class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-2xl font-extrabold md:text-3xl">Localização</h2>
+      <p class="mt-2 text-slate-600">Coloque seu link do Google Maps aqui.</p>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-3 md:items-start">
+        <div class="md:col-span-2 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow">
+          <!-- Mapa embed (opcional) -->
+          <div class="aspect-[16/9] w-full bg-slate-100 flex items-center justify-center text-slate-500 font-semibold">
+            Cole aqui o mapa do Google (opcional)
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="font-bold">🏖️ Praia</p>
+            <p class="text-sm text-slate-600">5 min a pé (exemplo)</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="font-bold">🍽️ Restaurantes</p>
+            <p class="text-sm text-slate-600">perto do condomínio</p>
+          </div>
+          <a id="btn-maps" target="_blank" rel="noopener"
+             href="https://maps.google.com"
+             class="block rounded-2xl bg-sky-700 p-4 text-center font-bold text-white hover:bg-sky-800">
+            Abrir no Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comodidades -->
+  <section id="comodidades" class="bg-white">
+    <div class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-2xl font-extrabold md:text-3xl">Comodidades</h2>
+      <p class="mt-2 text-slate-600">Edite livremente a lista.</p>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 p-5">🏊 Piscina</div>
+        <div class="rounded-2xl border border-slate-200 p-5">❄️ Ar-condicionado</div>
+        <div class="rounded-2xl border border-slate-200 p-5">📶 Wi-Fi</div>
+        <div class="rounded-2xl border border-slate-200 p-5">🍳 Cozinha</div>
+        <div class="rounded-2xl border border-slate-200 p-5">🚗 Garagem</div>
+        <div class="rounded-2xl border border-slate-200 p-5">🛏️ Roupa de cama</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-sky-900">
+    <div class="mx-auto max-w-5xl px-4 py-12 text-white">
+      <h2 class="text-2xl font-extrabold md:text-3xl">Reservas e contato</h2>
+      <p class="mt-2 text-white/80">Escolha como prefere reservar.</p>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <div class="rounded-3xl bg-white/10 p-6">
+          <p class="text-xl font-bold">Airbnb</p>
+          <p class="mt-2 text-white/80">Disponibilidade e pagamento pelo Airbnb.</p>
+          <a target="_blank" rel="noopener" href="https://airbnb.com"
+             class="mt-4 inline-block rounded-xl bg-rose-600 px-5 py-3 font-bold hover:bg-rose-700">
+            Abrir anúncio
+          </a>
+        </div>
+
+        <div class="rounded-3xl bg-white/10 p-6">
+          <p class="text-xl font-bold">WhatsApp</p>
+          <p class="mt-2 text-white/80">Tire dúvidas e combine detalhes.</p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20Beach%20Class%20312F."
+             class="mt-4 inline-block rounded-xl bg-emerald-600 px-5 py-3 font-bold hover:bg-emerald-700">
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <footer class="mt-10 border-t border-white/20 pt-6 text-sm text-white/70">
+        © <span id="year"></span> Beach Class 312F
+      </footer>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
