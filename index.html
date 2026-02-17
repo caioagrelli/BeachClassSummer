@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beach Class 312F</title>
+  <title>Beach Class Summer 312F</title>
 
-  <!-- Tailwind via CDN (rápido pra começar) -->
+  <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fonte opcional -->
+  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     body { font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
@@ -19,14 +19,14 @@
   </style>
 </head>
 
-<body class="bg-sky-50 text-slate-800">
+<body class="text-slate-800 bg-gradient-to-b from-sky-50 via-amber-50 to-white">
 
   <!-- Top bar -->
-  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+  <header class="sticky top-0 z-50 border-b border-white/40 bg-white/70 backdrop-blur">
     <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-      <a href="#top" class="flex items-center gap-2 font-bold">
+      <a href="#top" class="flex items-center gap-2 font-extrabold tracking-tight">
         <span class="text-xl">🏖️</span>
-        <span>Beach Class <span class="text-sky-600">312F</span></span>
+        <span>Beach Class <span class="text-sky-600">Summer</span> <span class="text-slate-500">312F</span></span>
       </a>
 
       <nav class="hidden gap-6 text-sm font-semibold md:flex">
@@ -36,115 +36,148 @@
         <a class="hover:text-sky-700" href="#contato">Contato</a>
       </nav>
 
-      <a id="cta-top" href="#contato"
-        class="rounded-full bg-sky-600 px-4 py-2 text-sm font-bold text-white hover:bg-sky-700">
+      <a href="#contato"
+        class="rounded-full bg-sky-600 px-4 py-2 text-sm font-extrabold text-white shadow hover:bg-sky-700 hover:shadow-md">
         Reservar
       </a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="top" class="mx-auto max-w-5xl px-4 pb-10 pt-8">
+  <section id="top" class="mx-auto max-w-5xl px-4 pb-10 pt-10">
     <div class="grid gap-8 md:grid-cols-2 md:items-center">
 
       <div class="space-y-5">
-        <div class="inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900">
-          <span>⭐</span> <span>Resort • Piscina • Conforto</span>
+        <div class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700 border border-white/60 shadow-sm">
+          <span>✨</span>
+          <span>Resort • Piscina • Clima de férias</span>
         </div>
 
         <h1 class="text-3xl font-extrabold leading-tight md:text-5xl">
-          Seu refúgio no <span class="text-sky-700">Beach Class</span>
+          Um lugar leve pra descansar<br class="hidden md:block"/>
+          no <span class="text-sky-700">Beach Class</span>
         </h1>
 
         <p class="text-base leading-relaxed text-slate-600 md:text-lg">
-          Apartamento <b>312F</b> com vibe de resort. Ideal pra descanso, casal, família e fim de semana.
+          O <b>Flat 312F</b> é aquele cantinho acolhedor pra quem quer curtir o condomínio,
+          relaxar na piscina e ter uma estadia tranquila e bem localizada.
         </p>
 
         <div class="flex flex-wrap gap-3">
-          <!-- Troque os links abaixo -->
-          <a id="btn-airbnb" target="_blank" rel="noopener"
+          <!-- TROQUE LINKS -->
+          <a target="_blank" rel="noopener"
             href="https://airbnb.com"
-            class="rounded-xl bg-rose-600 px-5 py-3 text-sm font-bold text-white hover:bg-rose-700">
+            class="rounded-2xl bg-rose-600 px-5 py-3 text-sm font-extrabold text-white shadow hover:bg-rose-700 hover:shadow-md">
             Airbnb
           </a>
 
-          <a id="btn-whatsapp" target="_blank" rel="noopener"
-            href="https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20Beach%20Class%20312F."
-            class="rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-700">
+          <a target="_blank" rel="noopener"
+            href="https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20Beach%20Class%20Summer%20312F."
+            class="rounded-2xl bg-emerald-600 px-5 py-3 text-sm font-extrabold text-white shadow hover:bg-emerald-700 hover:shadow-md">
             WhatsApp
           </a>
 
           <a href="#fotos"
-            class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 hover:bg-slate-50">
+            class="rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-extrabold text-slate-800 shadow-sm hover:bg-slate-50">
             Ver fotos
           </a>
         </div>
 
-        <div class="flex flex-wrap gap-4 text-sm text-slate-600">
-          <span>📍 Porto de Galinhas (exemplo)</span>
-          <span>🛏️ 4 hóspedes (exemplo)</span>
-          <span>📶 Wi-Fi</span>
+        <div class="flex flex-wrap gap-3 text-sm text-slate-600">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 border border-white/60">📍 Porto de Galinhas</span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 border border-white/60">🛏️ 4 hóspedes</span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 border border-white/60">📶 Wi-Fi</span>
         </div>
       </div>
 
       <!-- Imagem destaque -->
-      <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
-        <!-- Troque por sua imagem: assets/hero.jpg -->
-        <div class="aspect-[4/3] w-full bg-gradient-to-br from-sky-300 via-sky-500 to-sky-800"></div>
-        <div class="p-4">
-          <p class="font-bold">Beach Class 312F</p>
-          <p class="text-sm text-slate-600">Piscina + clima de resort</p>
+      <div class="relative overflow-hidden rounded-3xl border border-white/60 bg-white shadow-xl">
+        <!-- Troque por sua imagem: img/hero.jpg -->
+        <div class="aspect-[4/3] w-full bg-gradient-to-br from-sky-300 via-sky-500 to-sky-900"></div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
+
+        <div class="absolute bottom-4 left-4 right-4">
+          <div class="rounded-2xl bg-white/85 p-4 backdrop-blur border border-white/60 shadow">
+            <p class="font-extrabold">Beach Class Summer</p>
+            <p class="text-sm text-slate-600">Acolhedor • Condomínio com piscina e área de lazer</p>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Fotos -->
-  <section id="fotos" class="bg-white">
+  <!-- Fotos com ABAS (Flat / Condomínio) -->
+  <section id="fotos" class="bg-white/70 border-y border-white/60">
     <div class="mx-auto max-w-5xl px-4 py-12">
       <div class="mb-6">
         <h2 class="text-2xl font-extrabold md:text-3xl">Fotos</h2>
-        <p class="text-slate-600">Clique para abrir (troque pelas suas imagens depois).</p>
+        <p class="text-slate-600">Escolha entre fotos do <b>flat</b> ou do <b>condomínio</b>.</p>
       </div>
 
-      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        <div class="aspect-square rounded-2xl bg-slate-100"></div>
-        <div class="aspect-square rounded-2xl bg-slate-100"></div>
-        <div class="aspect-square rounded-2xl bg-slate-100"></div>
-        <div class="aspect-square rounded-2xl bg-slate-100"></div>
-        <div class="aspect-square rounded-2xl bg-slate-100"></div>
-        <div class="aspect-square rounded-2xl bg-slate-100"></div>
+      <!-- Tabs -->
+      <div class="mb-6 inline-flex rounded-full bg-slate-100 p-1 border border-slate-200">
+        <button id="tab-flat" class="tab-btn rounded-full px-5 py-2 text-sm font-extrabold bg-white text-slate-900 shadow">
+          🏠 Flat
+        </button>
+        <button id="tab-condominio" class="tab-btn rounded-full px-5 py-2 text-sm font-extrabold text-slate-600 hover:text-slate-900">
+          🏢 Condomínio
+        </button>
       </div>
+
+      <!-- Galeria Flat -->
+      <div id="galeria-flat" class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 opacity-100 transition-opacity duration-300">
+        <!-- Troque as imagens: img/flat1.jpg etc -->
+        <img src="img/flat1.jpg" alt="Flat 312F - Foto 1" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/flat2.jpg" alt="Flat 312F - Foto 2" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/flat3.jpg" alt="Flat 312F - Foto 3" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/flat4.jpg" alt="Flat 312F - Foto 4" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/flat5.jpg" alt="Flat 312F - Foto 5" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/flat6.jpg" alt="Flat 312F - Foto 6" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+      </div>
+
+      <!-- Galeria Condomínio -->
+      <div id="galeria-condominio" class="hidden grid gap-4 sm:grid-cols-2 md:grid-cols-3 opacity-0 transition-opacity duration-300">
+        <!-- Troque as imagens: img/cond1.jpg etc -->
+        <img src="img/cond1.jpg" alt="Condomínio - Foto 1" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/cond2.jpg" alt="Condomínio - Foto 2" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/cond3.jpg" alt="Condomínio - Foto 3" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/cond4.jpg" alt="Condomínio - Foto 4" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/cond5.jpg" alt="Condomínio - Foto 5" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+        <img src="img/cond6.jpg" alt="Condomínio - Foto 6" class="h-56 w-full rounded-2xl object-cover shadow-sm border border-slate-100">
+      </div>
+
     </div>
   </section>
 
   <!-- Localização -->
-  <section id="localizacao" class="bg-sky-50">
+  <section id="localizacao" class="bg-gradient-to-b from-sky-50 to-white">
     <div class="mx-auto max-w-5xl px-4 py-12">
       <h2 class="text-2xl font-extrabold md:text-3xl">Localização</h2>
-      <p class="mt-2 text-slate-600">Coloque seu link do Google Maps aqui.</p>
+      <p class="mt-2 text-slate-600">Abra no Google Maps para chegar com facilidade.</p>
 
       <div class="mt-6 grid gap-6 md:grid-cols-3 md:items-start">
-        <div class="md:col-span-2 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow">
-          <!-- Mapa embed (opcional) -->
+        <div class="md:col-span-2 overflow-hidden rounded-3xl border border-white/70 bg-white shadow">
           <div class="aspect-[16/9] w-full bg-slate-100 flex items-center justify-center text-slate-500 font-semibold">
-            Cole aqui o mapa do Google (opcional)
           </div>
         </div>
 
         <div class="space-y-4">
-          <div class="rounded-2xl border border-slate-200 bg-white p-5">
-            <p class="font-bold">🏖️ Praia</p>
-            <p class="text-sm text-slate-600">5 min a pé (exemplo)</p>
+          <div class="rounded-2xl border border-white/70 bg-white/80 p-5 shadow-sm">
+            <p class="font-extrabold">🏖️ Praia</p>
+            <p class="text-sm text-slate-600">5 min a pé</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-5">
-            <p class="font-bold">🍽️ Restaurantes</p>
+
+          <div class="rounded-2xl border border-white/70 bg-white/80 p-5 shadow-sm">
+            <p class="font-extrabold">🍽️ Restaurantes</p>
             <p class="text-sm text-slate-600">perto do condomínio</p>
           </div>
-          <a id="btn-maps" target="_blank" rel="noopener"
+
+          <!-- TROQUE LINK -->
+          <a target="_blank" rel="noopener"
              href="https://maps.google.com"
-             class="block rounded-2xl bg-sky-700 p-4 text-center font-bold text-white hover:bg-sky-800">
+             class="block rounded-2xl bg-sky-700 p-4 text-center font-extrabold text-white shadow hover:bg-sky-800 hover:shadow-md">
             Abrir no Google Maps
           </a>
         </div>
@@ -156,15 +189,15 @@
   <section id="comodidades" class="bg-white">
     <div class="mx-auto max-w-5xl px-4 py-12">
       <h2 class="text-2xl font-extrabold md:text-3xl">Comodidades</h2>
-      <p class="mt-2 text-slate-600">Edite livremente a lista.</p>
+      <p class="mt-2 text-slate-600">O essencial para uma estadia tranquila.</p>
 
       <div class="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        <div class="rounded-2xl border border-slate-200 p-5">🏊 Piscina</div>
-        <div class="rounded-2xl border border-slate-200 p-5">❄️ Ar-condicionado</div>
-        <div class="rounded-2xl border border-slate-200 p-5">📶 Wi-Fi</div>
-        <div class="rounded-2xl border border-slate-200 p-5">🍳 Cozinha</div>
-        <div class="rounded-2xl border border-slate-200 p-5">🚗 Garagem</div>
-        <div class="rounded-2xl border border-slate-200 p-5">🛏️ Roupa de cama</div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">🏊 Piscina</div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">❄️ Ar-condicionado</div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">📶 Wi-Fi</div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">🍳 Cozinha</div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">🚗 Garagem</div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">🛏️ Roupa de cama</div>
       </div>
     </div>
   </section>
@@ -176,34 +209,77 @@
       <p class="mt-2 text-white/80">Escolha como prefere reservar.</p>
 
       <div class="mt-6 grid gap-6 md:grid-cols-2">
-        <div class="rounded-3xl bg-white/10 p-6">
-          <p class="text-xl font-bold">Airbnb</p>
+        <div class="rounded-3xl bg-white/10 p-6 border border-white/10">
+          <p class="text-xl font-extrabold">Airbnb</p>
           <p class="mt-2 text-white/80">Disponibilidade e pagamento pelo Airbnb.</p>
           <a target="_blank" rel="noopener" href="https://airbnb.com"
-             class="mt-4 inline-block rounded-xl bg-rose-600 px-5 py-3 font-bold hover:bg-rose-700">
+             class="mt-4 inline-block rounded-xl bg-rose-600 px-5 py-3 font-extrabold hover:bg-rose-700">
             Abrir anúncio
           </a>
         </div>
 
-        <div class="rounded-3xl bg-white/10 p-6">
-          <p class="text-xl font-bold">WhatsApp</p>
+        <div class="rounded-3xl bg-white/10 p-6 border border-white/10">
+          <p class="text-xl font-extrabold">WhatsApp</p>
           <p class="mt-2 text-white/80">Tire dúvidas e combine detalhes.</p>
           <a target="_blank" rel="noopener"
-             href="https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20Beach%20Class%20312F."
-             class="mt-4 inline-block rounded-xl bg-emerald-600 px-5 py-3 font-bold hover:bg-emerald-700">
+             href="https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20Beach%20Class%20Summer%20312F."
+             class="mt-4 inline-block rounded-xl bg-emerald-600 px-5 py-3 font-extrabold hover:bg-emerald-700">
             Chamar no WhatsApp
           </a>
         </div>
       </div>
 
       <footer class="mt-10 border-t border-white/20 pt-6 text-sm text-white/70">
-        © <span id="year"></span> Beach Class 312F
+        © <span id="year"></span> Beach Class Summer 312F
       </footer>
     </div>
   </section>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // ano no footer (seguro)
+    window.addEventListener("DOMContentLoaded", function () {
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+
+    // Tabs: Flat / Condomínio + fade
+    const tabFlat = document.getElementById("tab-flat");
+    const tabCond = document.getElementById("tab-condominio");
+    const gFlat = document.getElementById("galeria-flat");
+    const gCond = document.getElementById("galeria-condominio");
+
+    function showFlat() {
+      // estilos tabs
+      tabFlat.className = "tab-btn rounded-full px-5 py-2 text-sm font-extrabold bg-white text-slate-900 shadow";
+      tabCond.className = "tab-btn rounded-full px-5 py-2 text-sm font-extrabold text-slate-600 hover:text-slate-900";
+
+      // troca com fade
+      gCond.classList.add("opacity-0");
+      setTimeout(() => {
+        gCond.classList.add("hidden");
+        gFlat.classList.remove("hidden");
+        requestAnimationFrame(() => gFlat.classList.remove("opacity-0"));
+      }, 180);
+    }
+
+    function showCond() {
+      tabCond.className = "tab-btn rounded-full px-5 py-2 text-sm font-extrabold bg-white text-slate-900 shadow";
+      tabFlat.className = "tab-btn rounded-full px-5 py-2 text-sm font-extrabold text-slate-600 hover:text-slate-900";
+
+      gFlat.classList.add("opacity-0");
+      setTimeout(() => {
+        gFlat.classList.add("hidden");
+        gCond.classList.remove("hidden");
+        requestAnimationFrame(() => gCond.classList.remove("opacity-0"));
+      }, 180);
+    }
+
+    // estado inicial
+    gFlat.classList.remove("opacity-0");
+    gCond.classList.add("opacity-0");
+
+    tabFlat.addEventListener("click", showFlat);
+    tabCond.addEventListener("click", showCond);
   </script>
 </body>
 </html>
